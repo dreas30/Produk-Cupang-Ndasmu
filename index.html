@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cupang Ndasmu — Produk Cupang Lokal</title>
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    :root{
+      --brand:#b4161b; /* merah gelap */
+      --accent:#ffd166; /* aksen kuning */
+    }
+    body{font-family:system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial}
+    .hero{background:linear-gradient(90deg, rgba(180,22,27,.95), rgba(255,209,102,.9)); color:#fff}
+    .brand{color:var(--brand); font-weight:700}
+    .product-card img{height:180px; object-fit:cover}
+    footer{background:#f8f9fa}
+    .badge-brand{background:var(--brand); color:#fff}
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+  <div class="container">
+    <a class="navbar-brand brand" href="#">Cupang Ndasmu</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navMenu" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#produk">Produk</a></li>
+        <li class="nav-item"><a class="nav-link" href="#galeri">Galeri</a></li>
+        <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
+        <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="hero py-5">
+  <div class="container d-md-flex align-items-center gap-4">
+    <div class="flex-grow-1">
+      <h1 class="display-5">Cupang Ndasmu</h1>
+      <p class="lead">Pilihan cupang berkualitas untuk pemula & kolektor. Sehat, warna menawan, perawatan mudah.</p>
+      <p>
+        <a href="#produk" class="btn btn-dark me-2">Lihat Produk</a>
+        <a href="#kontak" class="btn btn-outline-dark">Hubungi Kami</a>
+      </p>
+    </div>
+    <div class="text-center d-none d-md-block" style="width:320px">
+      <img src="https://picsum.photos/seed/cupang/400/300" alt="cupang" class="img-fluid rounded shadow-sm">
+    </div>
+  </div>
+</header>
+
+<main class="container py-5">
+  <!-- Produk -->
+  <section id="produk" class="mb-5">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h2 class="h4 mb-0">Produk Unggulan</h2>
+      <span class="badge badge-brand py-2 px-3">Stok Terbatas</span>
+    </div>
+
+    <div class="row g-3">
+      <!-- contoh kartu produk -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card product-card h-100 shadow-sm">
+          <img src="https://picsum.photos/seed/betta1/600/400" class="card-img-top" alt="Betta 1">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Cupang Wingeal - Red Flame</h5>
+            <p class="card-text">Ukuran 5-6 cm, sehat, diberi pakan berkualitas. Garansi mati 1x24 jam pengiriman (syarat berlaku).</p>
+            <div class="mt-auto d-flex gap-2">
+              <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#modalDetail" data-title="Cupang Wingeal - Red Flame" data-img="https://picsum.photos/seed/betta1/800/600" data-desc="Detail cupang Red Flame, asal...">Detail</button>
+              <button class="btn btn-sm btn-outline-success">Beli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card product-card h-100 shadow-sm">
+          <img src="https://picsum.photos/seed/betta2/600/400" class="card-img-top" alt="Betta 2">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Cupang Koi - Marble</h5>
+            <p class="card-text">Warna menarik, cocok untuk dekorasi aquascape kecil.</p>
+            <div class="mt-auto d-flex gap-2">
+              <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#modalDetail" data-title="Cupang Koi - Marble" data-img="https://picsum.photos/seed/betta2/800/600" data-desc="Detail cupang Koi Marble...">Detail</button>
+              <button class="btn btn-sm btn-outline-success">Beli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card product-card h-100 shadow-sm">
+          <img src="https://picsum.photos/seed/betta3/600/400" class="card-img-top" alt="Betta 3">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Cupang Halfmoon - Electric Blue</h5>
+            <p class="card-text">Sirip lebar, warna biru menyala. Sering dipilih kolektor.</p>
+            <div class="mt-auto d-flex gap-2">
+              <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#modalDetail" data-title="Cupang Halfmoon - Electric Blue" data-img="https://picsum.photos/seed/betta3/800/600" data-desc="Detail cupang Halfmoon...">Detail</button>
+              <button class="btn btn-sm btn-outline-success">Beli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Galeri -->
+  <section id="galeri" class="mb-5">
+    <h2 class="h5">Galeri</h2>
+    <div class="row g-2">
+      <div class="col-6 col-md-3"><img src="https://picsum.photos/seed/g1/400/300" class="img-fluid rounded" alt=""></div>
+      <div class="col-6 col-md-3"><img src="https://picsum.photos/seed/g2/400/300" class="img-fluid rounded" alt=""></div>
+      <div class="col-6 col-md-3"><img src="https://picsum.photos/seed/g3/400/300" class="img-fluid rounded" alt=""></div>
+      <div class="col-6 col-md-3"><img src="https://picsum.photos/seed/g4/400/300" class="img-fluid rounded" alt=""></div>
+    </div>
+  </section>
+
+  <!-- Tentang -->
+  <section id="tentang" class="mb-5">
+    <h2 class="h5">Tentang Cupang Ndasmu</h2>
+    <p>Cupang Ndasmu hadir sebagai sumber cupang sehat dan terawat. Kami fokus pada kualitas, perawatan, dan pengiriman yang aman.
+    Kami menerima pesanan grosir dan eceran. Untuk pertanyaan teknis tentang perawatan cupang, lihat FAQ atau hubungi kami langsung.</p>
+  </section>
+
+  <!-- Kontak / form -->
+  <section id="kontak" class="mb-5">
+    <h2 class="h5">Hubungi Kami</h2>
+    <form class="row g-3 needs-validation" novalidate>
+      <div class="col-md-6">
+        <label class="form-label">Nama</label>
+        <input type="text" class="form-control" required>
+        <div class="invalid-feedback">Nama wajib diisi.</div>
+      </div>
+      <div class="col-md-6">
+        <label class="form-label">Email / WA</label>
+        <input type="text" class="form-control" required>
+        <div class="invalid-feedback">Masukkan kontak yang bisa dihubungi.</div>
+      </div>
+      <div class="col-12">
+        <label class="form-label">Pesan</label>
+        <textarea class="form-control" rows="4" required></textarea>
+        <div class="invalid-feedback">Tulis pesan singkat.</div>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary">Kirim Pesan</button>
+      </div>
+    </form>
+  </section>
+</main>
+
+<footer class="py-4">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+    <div class="small">© <strong>Cupang Ndasmu</strong> 2025 — Semua hak dilindungi</div>
+    <div class="mt-2 mt-md-0">
+      <a href="#" class="me-3 text-decoration-none">Instagram</a>
+      <a href="#" class="text-decoration-none">Tiktok</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Modal detail produk -->
+<div class="modal fade" id="modalDetail" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Detail Produk</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-3">
+          <div class="col-md-6"><img id="modalImg" src="" class="img-fluid rounded" alt=""></div>
+          <div class="col-md-6">
+            <h5 id="modalTitle"></h5>
+            <p id="modalDesc"></p>
+            <p><strong>Harga:</strong> Rp XX.XXX</p>
+            <button class="btn btn-success">Beli Sekarang</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// isi modal dari tombol
+var modal = document.getElementById('modalDetail');
+modal.addEventListener('show.bs.modal', function (event) {
+  var button = event.relatedTarget;
+  var title = button.getAttribute('data-title');
+  var img = button.getAttribute('data-img');
+  var desc = button.getAttribute('data-desc');
+  document.getElementById('modalTitle').textContent = title;
+  document.getElementById('modalImg').src = img;
+  document.getElementById('modalDesc').textContent = desc;
+});
+
+// simple bootstrap form validation (lihat file 04-forms.html untuk referensi)
+(() => {
+  'use strict'
+  const forms = document.querySelectorAll('.needs-validation')
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+      } else {
+        event.preventDefault();
+        // di sini Anda bisa mengirim data via fetch atau menunjukkan notifikasi
+        alert('Pesan terkirim. Terima kasih!');
+        form.reset();
+        form.classList.remove('was-validated');
+      }
+      form.classList.add('was-validated');
+    }, false)
+  })
+})();
+</script>
+</body>
+</html>
